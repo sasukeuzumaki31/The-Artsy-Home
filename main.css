@@ -1,0 +1,35 @@
+html{
+    scroll-behavior: smooth;
+}
+#socialHandles{
+font-size: x-large;
+transition: 0.5s;
+}
+#socialHandles:hover{
+font-size: xx-large  ;
+}
+.heading{
+    font-family: 'Sofia';
+    font-style: italic;
+}
+.mainDiv{
+    background-color: #f3f5fa;
+}
+.parallax { 
+    background-image: url("https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&dpr=900&w=650"); 
+    min-height: 500px;  
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+} 
+.serviceCard{
+    transition: 0.1s;
+    /* transition-property: color ,font-weight, transform;     */
+}
+.serviceCard:hover{
+    font-weight: 700;
+    color: #324f8c;
+transform:translateZ(0) scaleY(1.2);
+}
+    

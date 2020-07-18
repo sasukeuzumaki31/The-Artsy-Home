@@ -37,7 +37,7 @@
             <a class="navbar-brand font-weight-bold" href="">
                 <img height="60" src="./images/3a9c48d5-1e54-46b0-845f-4ae2c15a9fb2_200x200.png" alt="">
             </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            <button id="menu" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
                 Menu
@@ -46,13 +46,19 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item text-white">
-                        <a class="nav-link" href="#AboutUs">About us</a>
+                        <a class="nav-link text-white " href="#AboutUs">About us</a>
                     </li>
                     <li class="nav-item text-white">
-                        <a class="nav-link" href="">Our Team</a>
+                        <a class="nav-link text-white" href="#Services">Services</a>
                     </li>
                     <li class="nav-item text-white">
-                        <a class="nav-link " href="#contact">Contact Us</a>
+                        <a class="nav-link text-white" href="#Team">Our Team</a>
+                    </li>
+                    <li class="nav-item text-white">
+                        <a class="nav-link text-white" href="#Reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item text-white">
+                        <a class="nav-link text-white " href="#contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -60,21 +66,18 @@
     </nav>
 
     <div class="parallax p-lg-5 p-0 d-flex text-white align-items-center">
-        <div class="container mt-5 pt-5">
-            <div class="row">
-                <div class="pt-5 order-2 order-lg-1 col-lg-6 col-12">
-                    <h1 class="d-block animate__animated animate__fadeInLeft">The Artsy Home</h1>
-                    <h3 class="d-block animate__animated animate__fadeInLeft  font-weight-light ">Our dedicated team
-                        will always help you to make your home look awesome but be still light on your wallet</h3>
-                </div>
-                <div class="order-1 order-lg-2 col-lg-6 col-12">
-                    <!-- <img class="img-fluid animate__animated animate__bounceIn"
-                        src="./images/coworking-entrepreneurship-startup-company-business-hand-painted-cartoon-business-people-business-material-removebg-preview.png"
-                        alt=""> -->
+            <div class="container mt-5 pt-5">
+                <div class="row">
+                    <div class="pt-5 order-2 order-lg-1 col-lg-6 col-12">
+                        <h1 class="d-block animate__animated animate__fadeInLeft">The Artsy Home</h1>
+                        <h3 class="d-block animate__animated animate__fadeInLeft  font-weight-light ">Our dedicated team
+                            will always help you to make your home look awesome but be still light on your wallet</h3>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+
+
 
     <div class="mainDiv p-3">
         <div class="animate__animated animate__fadeIn animate__delay-1s mt-2 text-center font-weight-bold">
@@ -102,10 +105,11 @@
         <div>
             <h1 class="heading">About Us</h1>
         </div>
-        <div class="row m-0 container-fluid">
+        <div class="row m-0 container-fluid text-left">
             <div class="col-lg-6 col-12">
                 <p style="font-size: large; padding-top: 15%;">
-                   <b>The Artsy Home</b>  is a boutique design firm, involved exceptionally qualified designers that work
+                    <b>The Artsy Home</b> is a boutique design firm, involved exceptionally qualified designers that
+                    work
                     cooperatively to make enlivened and interesting interior conditions. Our wide scope of demographic;
                     private to senior living, property holder to corporate clients, all craving to hoist their spaces
                     and draw in with their surroundings.
@@ -129,33 +133,36 @@
 
     <!-- Services -->
     <div id="Services" class="mainDiv text-center mb-5 mt-5 p-3">
-        <h1 class="heading">
+        <h1 class="heading wow animate__animated animate__fadeIn">
             Services
         </h1>
         <div class="container p-0 mb-5">
-            <p class="mb-5">
+            <p class="mb-5 wow animate__animated animate__fadeIn">
                 Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
                 consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
                 sit
                 in iste officiis commodi quidem hic quas.
             </p>
-            <div class="row no-gutters m-0 ">
-                <div class="serviceCard card  shadow col mr-2">
+            <div id="serviceCard" class="row no-gutters justify-content-around m-0 ">
+                <div class="serviceCard card  shadow col-lg-2 mr-2 mb-3 wow animate__animated animate__flipInX ">
                     <div class="card-body">
                         <p class="card-text">Building Construction and renovation</p>
                     </div>
                 </div>
-                <div class="serviceCard card  shadow col mr-2">
+                <div id="serviceCard"
+                    class="serviceCard card  shadow col-lg-2 mr-2 mb-3 wow animate__animated animate__flipInX animate__delay-1s">
                     <div class="card-body">
                         <p class="card-text">Painting and polishing works</p>
                     </div>
                 </div>
-                <div class="serviceCard card  shadow col mr-2">
+                <div id="serviceCard"
+                    class="serviceCard card  shadow col-lg-2 mr-2 mb-3 wow animate__animated animate__flipInX animate__delay-2s">
                     <div class="card-body">
                         <p class="card-text">Interior Designing and Space Management</p>
                     </div>
                 </div>
-                <div class="serviceCard card  shadow col mr-2">
+                <div id="serviceCard"
+                    class="serviceCard card  shadow col-lg-2 mr-2 mb-3 wow animate__animated animate__flipInX animate__delay-3s">
                     <div class="card-body">
                         <p class="card-text">Interior Decoration and Restoration</p>
                     </div>
@@ -163,17 +170,165 @@
             </div>
 
         </div>
-
     </div>
     <!-- Team -->
-    <div id="Team" class=" text-center mb-5 mt-5 p-3">
-        <h1 class="heading">
+    <div id="Team" class="text-center m-0 mb-5 mt-5">
+        <h1 class="heading wow animate__animated animate__fadeIn">
             Team
         </h1>
+        <div class="container">
+            <p class="m-0 mb-5 wow animate__animated animate__fadeIn">
+                Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+                sit
+                in iste officiis commodi quidem hic quas.
+            </p>
+        </div>
+
+        <div class="container-fluid text-center">
+
+            <div class="row no-gutters mb-5 justify-content-around">
+                <div class="teamCard teamDescCard card shadow col-lg-5 mb-2 ">
+                    <div class="d-flex flex-lg-row flex-column  p-3">
+                        <div class="text-lg-left w-100  mr-lg-3 m-0">
+                            <img class="img-fluid rounded-circle " width="200"
+                                src="https://ath2.unileverservices.com/wp-content/uploads/sites/3/2017/10/young-men-haircuts-curly-afro-min-500x500.jpg"
+                                alt="">
+                        </div>
+
+                        <div class=" info card-body p-0 text-lg-left">
+                            <h4>Barry Allen</h4>
+                            <span>
+                                CEO
+                            </span>
+                            <div class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nihil. Et tempora
+                                dolore soluta tenetur dolorem quod at consectetur,?
+                            </div>
+                            <div>
+                                <a id="teamHandles" class="btn">
+                                    <i style="color: #507ad6;" class=" fa fa-facebook"></i>
+                                </a>
+                                <a id="teamHandles" class="btn ml-5 mr-5">
+                                    <i style="color: #507ad6;" class=" fa fa-instagram"></i>
+                                </a>
+                                <a id="teamHandles" class="btn">
+                                    <i style="color: #507ad6;" class=" fa fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="teamCard teamDescCard card shadow col-lg-5 mb-2">
+                    <div class="d-flex flex-lg-row flex-column  p-3">
+                        <div class="text-lg-left w-100  mr-lg-3 m-0">
+                            <img class="img-fluid rounded-circle mr-3 " width="200"
+                                src="https://ath2.unileverservices.com/wp-content/uploads/sites/3/2017/10/young-men-haircuts-messy-straight-hair-min-500x500.jpg"
+                                alt="">
+                        </div>
+
+                        <div class=" info card-body p-0 text-lg-left">
+                            <h4>Barry Allen</h4>
+                            <span>
+                                CEO
+                            </span>
+                            <div class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nihil. Et tempora
+                                dolore soluta tenetur dolorem quod at consectetur, ?
+                            </div>
+                            <div>
+                                <a id="teamHandles" class="btn">
+                                    <i style="color: #507ad6;" class=" fa fa-facebook"></i>
+                                </a>
+                                <a id="teamHandles" class="btn ml-5 mr-5">
+                                    <i style="color: #507ad6;" class=" fa fa-instagram"></i>
+                                </a>
+                                <a id="teamHandles" class="btn">
+                                    <i style="color: #507ad6;" class=" fa fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="row no-gutters justify-content-around">
+                <div class="teamCard teamDescCard card shadow col-lg-5 mb-2  ">
+                    <div class="d-flex flex-lg-row flex-column p-3">
+                        <div class="text-lg-left w-100  mr-lg-3 m-0">
+                            <img class="img-fluid rounded-circle mr-3" width="200"
+                                src="https://i.cdn-sc.com/users/31416/20191009073204.png" alt="">
+                        </div>
+
+                        <div class=" info card-body p-0 text-lg-left">
+                            <h4>Barry Allen</h4>
+                            <span>
+                                CEO
+                            </span>
+                            <div class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nihil. Et tempora
+                                dolore soluta tenetur dolorem quod at consectetur, ?
+                            </div>
+                            <div>
+                                <a id="teamHandles" class="btn">
+                                    <i style="color: #507ad6;" class=" fa fa-facebook"></i>
+                                </a>
+                                <a id="teamHandles" class="btn ml-5 mr-5">
+                                    <i style="color: #507ad6;" class=" fa fa-instagram"></i>
+                                </a>
+                                <a id="teamHandles" class="btn">
+                                    <i style="color: #507ad6;" class=" fa fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="teamCard teamDescCard card shadow col-lg-5 mb-2">
+                    <div class="d-flex flex-lg-row flex-column  p-3">
+                        <div class="text-lg-left w-100  mr-lg-3 m-0">
+                            <img class="img-fluid rounded-circle mr-3 " width="200"
+                                src="https://images.pexels.com/photos/936229/pexels-photo-936229.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                alt="">
+                        </div>
+
+                        <div class=" info card-body p-0 text-lg-left">
+                            <h4>Barry Allen</h4>
+                            <span>
+                                CEO
+                            </span>
+                            <div class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nihil. Et tempora
+                                dolore soluta tenetur dolorem quod at consectetur, ?
+                            </div>
+                            <div>
+                                <a id="teamHandles" class="btn">
+                                    <i style="color: #507ad6;" class=" fa fa-facebook"></i>
+                                </a>
+                                <a id="teamHandles" class="btn ml-5 mr-5">
+                                    <i style="color: #507ad6;" class=" fa fa-instagram"></i>
+                                </a>
+                                <a id="teamHandles" class="btn">
+                                    <i style="color: #507ad6;" class=" fa fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <!-- Customers -->
-    <div class="mainDiv p-3 mb-2 container-fluid">
+    <div id = "Reviews" class="mainDiv p-3 mb-2 container-fluid">
         <div class="text-center mb-4">
             <h1 class="heading">From Our Customers</h1>
         </div>
@@ -333,7 +488,14 @@
             document.getElementById("mainNav").style.opacity = 1;
         }
 
-    } 
+    }
+    document.getElementById("menu").onclick = function(){
+        document.getElementById("mainNav").className = "navbar fixed-top navbar-expand-lg navbar-dark bg-dark"
+        document.getElementById("mainNav").style.opacity = 0.8;
+    }
+    document.getElementById("serviceCard").onclick = function(){
+       window.location.href = "services.html"
+    }
 
 </script>
 

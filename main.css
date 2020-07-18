@@ -1,16 +1,26 @@
 html{
     scroll-behavior: smooth;
 }
+
 #socialHandles{
 font-size: x-large;
-transition: 0.5s;
+transform: 0;
+transition: transform ease 0.5s;
 }
 #socialHandles:hover{
-font-size: xx-large  ;
+    transform: translateZ(0) scale(1.5,1.5);
 }
 .heading{
     font-family: 'Sofia';
     font-style: italic;
+}
+#teamHandles{
+    transform: 0;
+transition: transform ease 0.5s;
+}
+#teamHandles:hover{
+    transform: translateZ(0) scale(1.5,1.5);
+
 }
 .mainDiv{
     background-color: #f3f5fa;
@@ -24,12 +34,31 @@ font-size: xx-large  ;
     background-size: cover; 
 } 
 .serviceCard{
-    transition: 0.1s;
-    /* transition-property: color ,font-weight, transform;     */
+    position: relative;
+    font-weight: 700;
+    top: 0;
+    transition: ease 0.5s;
 }
 .serviceCard:hover{
-    font-weight: 700;
-    color: #324f8c;
-transform:translateZ(0) scaleY(1.2);
+    top: -10px;
+    color: #507ad6;
+    cursor: pointer;
 }
-    
+.teamDescCard{
+    position: relative;
+
+    top: 0;
+    transition: ease 0.5s;
+}
+.teamDescCard:hover{
+    top: -10px;
+}
+.teamCard .info span::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #cbd6e9;
+}
+   

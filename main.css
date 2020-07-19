@@ -53,12 +53,11 @@ transition: transform ease 0.5s;
 .teamDescCard:hover{
     top: -10px;
 }
-.teamCard .info span::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 1px;
-    background: #cbd6e9;
-}
-   
+#upBtn{
+    display: none;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    position: fixed;
+}   

@@ -2,6 +2,12 @@ html{
     scroll-behavior: smooth;
 }
 
+.nav-item:hover {
+    font-size: larger;
+    font-weight: bolder;
+    border-bottom: 5px solid #000;
+}
+
 #socialHandles{
 font-size: x-large;
 transform: 0;
